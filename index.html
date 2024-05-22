@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Simple</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro</h1>
+    <form>
+        <div>
+            <label>Nombre: *</label>
+            <input type="text" name="first_name">
+        </div>
+        <br>
+        <div>
+            <label>Apellido: *</label>
+            <input type="text" name="last_name">
+        </div>
+        <br>
+        <div>
+            <label>Email: *</label>
+            <input type="text" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Password: *</label>
+            <input type="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label>Confirmacion Password: *</label>
+            <input type="password" name="confirm">
+        </div>
+        <br>
+        <div>
+            <label>Fecha de Nacimiento: *</label>
+            <input type="date" name="dob">
+        </div>
+        <br>
+        <div>
+            <p>Identidad de género:</p>
+            <input type="radio" name="genero" value="mascilino" id="masculino">
+            <label for="mascilino">Mascilino</label>
+            <input type="radio" name="genero" value="femenino" id="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" name="genero" value="Non-Binario" id="nb">
+            <label for="nb">No-Binario</label>
+            <input type="radio" name="genero" value="Prefiero no contestar" id="no">
+            <label for="no">Prefiero no contestar</label>
+        </div>
+        <br>
+        <div>
+            <p>Breve descripción:</p>
+            <textarea name="descripcion" cols="50" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Lenguaje Favorito:</label>
+            <select name="fav_lang">
+                <option>JavaScript</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>C#</option>
+                <option>Ruby</option>
+                <option>Go</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="email-updates" id="email-updates" checked>
+            <label for="email-updates">Sí, me gustaría recibir actualizaciones periódicas por correo electrónico.</label>
+        </div>
+        <br>
+        <input type="submit" value="Crear Cuenta">
+        <p>* indica un campo obligatorio</p>
+    </form>
+    <p>* creado por Liza Molina</p>
+</body>
+
+</html>
